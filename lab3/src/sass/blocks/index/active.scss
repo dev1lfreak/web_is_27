@@ -1,0 +1,85 @@
+@use "../../base/variables.scss" as *;
+
+.active {
+    padding: 80px 20px;
+
+    &__items {
+        width: 340px;
+        margin: 0 auto;
+
+        @media (max-width: 380px) {
+            width: 100%;
+        }
+
+        @media (min-width: 768px) {
+            width: 530px;
+        }
+
+        @media (min-width: 1200px) {
+            width: 1140px;
+            display: grid;
+            grid-template-columns: 436px 664px;
+            gap: 20px;
+        }
+
+        @media (min-width: 1920px) {
+            grid-template-columns: 556px 844px;
+            width: 1440px;
+        }
+    }
+
+    &__item-title {
+        margin: 40px 0;
+        font-size: 20px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    &__content {
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: left;
+
+        a {
+            color: $ceramic;
+            text-decoration: none;
+        }
+
+        @media (min-width: 768px) {
+            font-size: 20px;
+        }
+
+        @media (min-width: 1200px) {
+            max-width: 556px;
+        }
+    }
+
+    &__img-store {
+        box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+
+        @media (min-width: 1200px) {
+            width: 436px;
+            height: 250px;
+        }
+
+        @media (min-width: 1920px) {
+            width: 556px;
+            height: 320px;
+        }
+    }
+
+    &__img-workshop {
+        box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+
+        @media (min-width: 1200px) {
+            width: 664px;
+            height: 250px;
+        }
+
+        @media (min-width: 1920px) {
+            width: 844px;
+            height: 320px;
+        }
+    }
+}

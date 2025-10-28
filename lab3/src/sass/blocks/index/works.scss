@@ -1,0 +1,91 @@
+@use "../../base/variables.scss" as *;
+
+.works {
+    position: relative;
+    padding: 0 20px 80px;
+
+    &__container {
+        position: relative;
+
+        @media (min-width: 1200px) {
+            width: 1180px;
+            margin: 0 auto;
+        }
+
+        @media (min-width: 1920px) {
+            width: 1365px;
+            margin: 0 auto;
+        }
+    }
+
+    &__slider {
+        width: 100%;
+        position: relative;
+
+        @media (min-width: 1200px) {
+            width: 1034px;
+        }
+
+        @media (min-width: 1920px) {
+            width: 1250px;
+        }
+    }
+}
+
+.works .swiper {
+    &-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__image {
+            width: 340px;
+            height: 223px;
+            margin: 0 auto;
+            object-fit: cover;
+
+            @media (min-width: 1200px) {
+                width: 400px;
+                height: 265px;
+            }
+        }
+    }
+
+    &-pagination {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 50px;
+
+        &-bullet {
+            width: 12px;
+            height: 12px;
+            background: $dark;
+            border-radius: 0%;
+            transition: all 0.3s ease;
+
+            &-active {
+                background: $ceramic;
+            }
+        }
+    }
+
+    &-button {
+
+        &-prev,
+        &-next {
+            --swiper-navigation-size: 40px;
+            --swiper-theme-color: $dark;
+            display: none;
+            border: none;
+            background: transparent;
+            z-index: 10;
+            transform: translateY(-45px);
+
+            @media (min-width: 1200px) {
+                display: flex;
+            }
+        }
+    }
+}

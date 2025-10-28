@@ -1,0 +1,24 @@
+.map{
+    padding: 0px 0px 40px;
+    &__title {
+        margin-top: 0px;
+    }
+
+    &__items{
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+
+        @media (min-width:780px) {
+            max-width: 720px;
+        }
+
+        @media (min-width: 1200px) {
+            max-width: 1140px;
+        }
+
+        @media (min-width: 1920px) {
+            max-width: 1440px;
+        }
+    }
+}

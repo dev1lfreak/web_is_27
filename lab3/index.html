@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Website for Ceramic soul brand" />
+	<meta name="author" content="ITMO Student, Kvachuk Sergey" />
+	<title>Ceramic soul</title>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;1,400&display=swap"
+		rel="stylesheet" />
+</head>
+
+<body>
+	<section class="container">
+		<header class="header">
+			<div class="header__top">
+				<div class="burger"><span></span><span></span><span></span></div>
+				<a href="index.html" class="header__logo">
+					<img src="./src/logo/logo.png" alt="logo" />
+				</a>
+
+				<div class="header__icons">
+					<a href="#"><span class="icon-search"></span></a>
+					<a href="#"><span class="icon-shopping-bag"></span></a>
+				</div>
+			</div>
+
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="nav__item"><a href="catalog.html" class="nav__link">Catalog</a></li>
+					<li class="nav__item"><a href="blog.html" class="nav__link">Blog</a></li>
+					<li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<section class="promo">
+			<img src="./src/img/promo/potter.jpg" alt="potter" class="promo__img-potter" />
+
+			<h1 class="title-h1-italic promo__title">
+				Make your dream come true or decorate your home
+			</h1>
+
+			<img src="./src/img/promo/ceramic-vase.jpg" alt="vase" class="promo__img-ceramic-vase" />
+			<button class="btn-default promo__btn"><a href="catalog.html">shop now</a></button>
+		</section>
+
+		<section class="active">
+			<h2 class="title-h2-italic active__title">Create or buy</h2>
+			<div class="active__items">
+				<article class="active__item">
+					<h3 class="active__item-title">Our store</h3>
+					<img src="./src/img/about/store.jpg" alt="store" class="active__img-store" />
+					<div class="active__content">
+						<p>
+							Welcome to <a href="index.html" class="active__link">Ceramic Soul</a>, where each piece
+							tells a
+							story of craftsmanship and creativity. Our handmade ceramics are thoughtfully designed and
+							carefully crafted, blending traditional techniques with modern aesthetics. Whether you're
+							looking for a unique gift or a
+							special addition to your home, our collection offers timeless pieces that bring warmth and
+							authenticity to any space.
+						</p>
+					</div>
+				</article>
+
+				<article class="active__item">
+					<h3 class="active__item-title">Our workshop</h3>
+					<img src="./src/img/about/ceramic.jpg" alt="workshop" class="active__img-workshop" />
+					<div class="active__content">
+						<p>
+							At <a href="index.html" class="active__link">Ceramic Soul</a> workshop, we don’t just craft
+							ceramics—we invite you to get hands-on and create your own unique pieces. Through our
+							engaging masterclasses, you’ll learn traditional techniques, work with natural materials,
+							and
+							experience the joy of
+							shaping clay into something truly personal.
+						</p>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<section class="contact">
+			<h2 class="title-h2-italic contact__title">get in touch</h2>
+
+			<div class="contact__items">
+				<img src="./src/img/form/tea.jpg" alt="tea" class="contact__img-tea" />
+
+				<form class="contact__form">
+					<label class="field field__name">
+						<span class="field__label">Name</span>
+						<input type="text" name="name" placeholder="Name" />
+					</label>
+
+					<label class="field field__email">
+						<span class="field__label">Email</span>
+						<input type="email" name="email" placeholder="Email" />
+					</label>
+
+					<label class="field field__question">
+						<span class="field__label">Your question</span>
+						<textarea name="question" placeholder="Question" rows="6"></textarea>
+					</label>
+
+					<label class="checkbox">
+						<input type="checkbox" name="agree" />
+						<span>I agree with the <a href="#">terms</a></span>
+					</label>
+
+					<button type="submit" class="btn-default contact__btn">send request</button>
+				</form>
+
+				<img src="./src/img/icons/vase.png" alt="vase-form" class="contact__img-vase-icon" />
+			</div>
+		</section>
+
+		<section class="works">
+			<h2 class="title-h2-italic works__title">check out our works</h2>
+
+			<div class="works__container">
+				<div class="works__slider swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img class="swiper-slide__image" src="./src/img/works/tea-1.jpg" alt="Work 1">
+						</div>
+						<div class="swiper-slide">
+							<img class="swiper-slide__image" src="./src/img/works/tea-2.jpg" alt="Work 2">
+						</div>
+						<div class="swiper-slide">
+							<img class="swiper-slide__image" src="./src/img/works/tea-3.jpg" alt="Work 3">
+						</div>
+						<div class="swiper-slide">
+							<img class="swiper-slide__image" src="./src/img/works/tea-4.jpg" alt="Work 4">
+						</div>
+					</div>
+
+					<div class="swiper-pagination"></div>
+				</div>
+
+				<div class="swiper-button-next">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+						<path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+							fill="none" />
+					</svg>
+				</div>
+
+				<div class="swiper-button-prev">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+						<path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+							fill="none" />
+					</svg>
+				</div>
+			</div>
+		</section>
+	</section>
+
+	<footer class="footer">
+		<div class="footer__content">
+			<section class="footer__newsletter">
+				<p class="footer__title">newsletter</p>
+				<p class="footer__description">Keep up to date with news and promotions</p>
+				<form class="footer__newsletter-form">
+					<div class="field__email">
+						<input type="email" name="email" placeholder="Enter your e-mail">
+					</div>
+
+					<div class="footer__checkbox-group">
+						<input type="checkbox" name="agree" />
+						<span>I agree with the <a href="#">terms</a></span>
+					</div>
+
+					<button type="submit" class="footer__btn">submit</button>
+				</form>
+			</section>
+
+			<div class="footer__links-social-group">
+				<section class="footer__discover">
+					<p class="footer__title">discover</p>
+					<ul class="footer__link-list">
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="blog.html">Blog</a></li>
+					</ul>
+				</section>
+
+				<section class="footer__shopping">
+					<p class="footer__title">shopping</p>
+					<ul class="footer__link-list">
+						<li><a href="catalog.html">Catalog</a></li>
+					</ul>
+				</section>
+
+				<section class="footer__information">
+					<p class="footer__title">information</p>
+					<ul class="footer__link-list">
+						<li><a href="#">Terms and Conditions</a></li>
+					</ul>
+				</section>
+
+				<section class="footer__follow-us">
+					<p class="footer__title">follow us</p>
+					<div class="social-links">
+						<a href="#" class="social-link__facebook">
+							<img src="./src/img/icons/facebook.svg" alt="facebook" />
+						</a>
+						<a href="#" class="social-link__instagram">
+							<img src="./src/img/icons/instagram.svg" alt="instagram" />
+						</a>
+						<a href="#" class="social-link__pinterest">
+							<img src="./src/img/icons/pinterest.svg" alt="pinterest" />
+						</a>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<p class="footer__copyright">&copy; Copyright 2025. Ceramic soul</p>
+	</footer>
+
+	<script type="module" src="./src/js/index.js"></script>
+</body>
+
+</html>
