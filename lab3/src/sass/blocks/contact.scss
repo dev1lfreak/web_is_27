@@ -1,0 +1,176 @@
+@use "../base/variables.scss" as *;
+
+.contact {
+    padding: 0px 20px 60px;
+
+    &__img-tea,
+    &__img-vase-icon {
+        display: none;
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    &__form {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    &__btn {
+        cursor: pointer;
+        transition: background-color 0.5s, color 0.5s;
+
+        &:hover {
+            background-color: $ceramic;
+            color: $light;
+        }
+    }
+
+    .field {
+        display: block;
+        margin-bottom: 16px;
+
+        &__label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+            font-weight: 400;
+            color: $dark;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 12px 14px;
+            border: 1px solid $ui-disabled;
+            border-radius: 2px;
+            color: $dark;
+            transition: border-color 0.3s ease;
+
+            &:focus,
+            &:not(:placeholder-shown) {
+                border-color: $dark;
+                box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+            }
+
+            &:invalid {
+                border-color: $ui-error;
+                box-shadow: 0 6px 16px rgba($ui-error, 0.04);
+            }
+        }
+    }
+
+    .checkbox {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 8px 0 16px;
+
+        a {
+            color: $terms;
+            text-decoration: none;
+        }
+    }
+
+    @media (min-width: 768px) {
+        &__items {
+            display: grid;
+            grid-template-columns: 4fr 1fr;
+            gap: 40px;
+            padding-left: 40px;
+            max-width: 530px;
+            margin: auto;
+        }
+
+        &__img-vase-icon {
+            display: block;
+            width: 85px;
+            height: 85px;
+            margin-top: auto;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        &__items {
+            display: grid;
+            grid-template-columns: 3fr 2fr 0.5fr;
+            gap: 80px;
+            padding-left: 0;
+            max-width: 1140px;
+            margin: 0 auto;
+        }
+
+        &__img-tea {
+            display: block;
+            margin-bottom: auto;
+            grid-column: 1;
+            width: 550px;
+            height: 341.76px;
+            box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+        }
+    }
+
+    @media (min-width: 1920px) {
+        &__items {
+            display: grid;
+            grid-template-columns: 2.1fr 1fr 1fr;
+            gap: 40px;
+            max-width: 1365px;
+        }
+
+        &__img-tea {
+            width: 573px;
+            height: 356px;
+            grid-row: 1 / span 5;
+        }
+
+        &__form {
+            grid-column: 2 / span 3;
+            grid-row: 1 / span 5;
+            max-width: none;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        &__img-vase-icon {
+            grid-column: 3;
+            grid-row: 5;
+            margin-left: auto;
+            align-self: end;
+        }
+
+        .field__name {
+            grid-column: 1;
+            grid-row: 1;
+            margin: 0;
+        }
+
+        .field__email {
+            grid-column: 2;
+            grid-row: 1;
+            margin: 0;
+        }
+
+        .field__question {
+            grid-column: 1;
+            grid-row: 2;
+            margin: 0;
+        }
+
+        .checkbox {
+            grid-column: 1 / span 2;
+            grid-row: 3;
+            margin: 0;
+        }
+
+        &__btn {
+            grid-column: 1 / span 2;
+            grid-row: 4;
+        }
+    }
+}
